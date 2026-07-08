@@ -1,5 +1,5 @@
 // ============================================
-// Terminal typewriter — the "deal hypothesis" signature moment
+// Terminal typewriter - the "deal hypothesis" signature moment
 // ============================================
 const script = [
   { text: "$ analyze_target(company=\"prospect_co\")", cls: "tk-cmd" },
@@ -111,7 +111,7 @@ function initLanguageSwitch() {
     try {
       localStorage.setItem("resume-lang", lang);
     } catch (e) {
-      /* localStorage unavailable — ignore */
+      /* localStorage unavailable - ignore */
     }
   }
 
@@ -123,7 +123,7 @@ function initLanguageSwitch() {
   try {
     savedLang = localStorage.getItem("resume-lang") || "en";
   } catch (e) {
-    /* localStorage unavailable — default to English */
+    /* localStorage unavailable - default to English */
   }
 
   if (savedLang === "ru") applyLanguage("ru");

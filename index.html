@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Danila Diagilev - Head of Sales</title>
-<meta name="description" content="Danila Diagilev - B2B Sales Leader with an Engineering Background. Head of Sales / Sales Operations Manager.">
+<title>Danila Diagilev — Head of Sales</title>
+<meta name="description" content="Danila Diagilev — B2B Sales Leader with an Engineering Background. Head of Sales / Sales Operations Manager.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -14,18 +14,23 @@
 
 <div class="noise-overlay" aria-hidden="true"></div>
 
+<div class="lang-switch" role="group" aria-label="Language">
+  <button type="button" class="lang-btn is-active" data-lang="en" aria-pressed="true">EN</button>
+  <button type="button" class="lang-btn" data-lang="ru" aria-pressed="false">RU</button>
+</div>
+
 <header class="hero">
   <div class="hero-grid">
     <div class="hero-left">
-      <p class="eyebrow">B2B Sales Leader - Engineering Background</p>
+      <p class="eyebrow" data-i18n="eyebrow">B2B Sales Leader — Engineering Background</p>
       <h1 class="name">Danila<br>Diagilev</h1>
-      <p class="role">Head of Sales / Sales Operations Manager</p>
+      <p class="role" data-i18n="role">Head of Sales / Sales Operations Manager</p>
       <p class="location">
-        <span>Tbilisi, Georgia</span>
+        <span data-i18n="loc.city">Tbilisi, Georgia</span>
         <span class="dot">·</span>
-        <span>EN C1</span>
+        <span data-i18n="loc.en">EN C1</span>
         <span class="dot">·</span>
-        <span>ES A2</span>
+        <span data-i18n="loc.es">ES A2</span>
       </p>
       <div class="hero-actions">
         <a href="mailto:dyagilev.danila@gmail.com" class="btn btn-primary">dyagilev.danila@gmail.com</a>
@@ -55,21 +60,21 @@
   <section class="section profile" data-reveal>
     <div class="section-head">
       <span class="tag-label">01</span>
-      <h2>Profile</h2>
+      <h2 data-i18n="h.profile">Profile</h2>
     </div>
     <div class="section-body">
-      <p class="lede">
-        Three-plus years building data infrastructure - AWS, Terraform, Snowflake, Python - before moving into B2B sales,
+      <p class="lede" data-i18n="profile.p1">
+        Three-plus years building data infrastructure — AWS, Terraform, Snowflake, Python — before moving into B2B sales,
         where I hit <strong>100% of annual quota</strong> at an average deal size of <strong>$200,000</strong>.
       </p>
-      <p>
+      <p data-i18n="profile.p2">
         My approach to sales is research-driven. Before any client contact, I analyze the target company, map its
-        decision-makers, and build a data-backed hypothesis for why the solution fits that specific client -
+        decision-makers, and build a data-backed hypothesis for why the solution fits that specific client —
         the same discipline I used to debug infrastructure, now pointed at a pipeline.
       </p>
-      <p>
+      <p data-i18n="profile.p3">
         I've trained and mentored junior sales managers and IT specialists. I'm looking for a full Head of Sales
-        role - building process, forecasting, and client engagement strategy, not managing call volume.
+        role — building process, forecasting, and client engagement strategy, not managing call volume.
       </p>
     </div>
   </section>
@@ -77,21 +82,21 @@
   <section class="section skills" data-reveal>
     <div class="section-head">
       <span class="tag-label">02</span>
-      <h2>Core Skills</h2>
+      <h2 data-i18n="h.skills">Core Skills</h2>
     </div>
     <div class="section-body">
       <ul class="chip-list">
-        <li class="chip">Sales Team Management &amp; Mentoring</li>
-        <li class="chip">Client Research &amp; OSINT</li>
-        <li class="chip">Sales Process &amp; Funnel Design</li>
-        <li class="chip">Revenue Forecasting</li>
-        <li class="chip">Deal Hypothesis Development</li>
-        <li class="chip">CRM - Bitrix24 / amoCRM / 1C</li>
-        <li class="chip">Data Analysis - Excel / Python</li>
-        <li class="chip">B2B Negotiations</li>
-        <li class="chip">Stakeholder Engagement</li>
-        <li class="chip">Cross-Functional Collaboration</li>
-        <li class="chip chip-eng">AWS / Terraform / Snowflake</li>
+        <li class="chip" data-i18n="skill.1">Sales Team Management &amp; Mentoring</li>
+        <li class="chip" data-i18n="skill.2">Client Research &amp; OSINT</li>
+        <li class="chip" data-i18n="skill.3">Sales Process &amp; Funnel Design</li>
+        <li class="chip" data-i18n="skill.4">Revenue Forecasting</li>
+        <li class="chip" data-i18n="skill.5">Deal Hypothesis Development</li>
+        <li class="chip" data-i18n="skill.6">CRM — Bitrix24 / amoCRM / 1C</li>
+        <li class="chip" data-i18n="skill.7">Data Analysis — Excel / Python</li>
+        <li class="chip" data-i18n="skill.8">B2B Negotiations</li>
+        <li class="chip" data-i18n="skill.9">Stakeholder Engagement</li>
+        <li class="chip" data-i18n="skill.10">Cross-Functional Collaboration</li>
+        <li class="chip chip-eng" data-i18n="skill.11">AWS / Terraform / Snowflake</li>
       </ul>
     </div>
   </section>
@@ -99,7 +104,7 @@
   <section class="section experience" data-reveal>
     <div class="section-head">
       <span class="tag-label">03</span>
-      <h2>Experience</h2>
+      <h2 data-i18n="h.experience">Experience</h2>
     </div>
 
     <div class="timeline">
@@ -108,38 +113,38 @@
         <div class="timeline-marker"><span class="timeline-dot"></span></div>
         <div class="timeline-content">
           <div class="timeline-meta">
-            <span class="timeline-date">Mar 2025 - Present</span>
-            <span class="timeline-track">sales</span>
+            <span class="timeline-date">Mar 2025 — Present</span>
+            <span class="timeline-track" data-i18n="track.sales">sales</span>
           </div>
-          <h3>Senior Sales Executive / Acting Sales Lead</h3>
-          <p class="timeline-org">APMG · UAE · Automotive B2B</p>
-          <ul>
-            <li>Built a methodology for researching new markets and selecting target clients - market analysis, competitive landscape, ICP, decision-maker mapping.</li>
+          <h3 data-i18n="job1.title">Senior Sales Executive / Acting Sales Lead</h3>
+          <p class="timeline-org" data-i18n="job1.org">APMG · UAE · Automotive B2B</p>
+          <ul data-i18n="job1.bullets">
+            <li>Built a methodology for researching new markets and selecting target clients — market analysis, competitive landscape, ICP, decision-maker mapping.</li>
             <li>Presented the sales development strategy to leadership; it was adopted as the team standard for prospecting and qualification.</li>
             <li>Rolled out the methodology: trained managers, coordinated their work, monitored negotiation-readiness and KPIs.</li>
-            <li>Ran full-cycle deals - account strategy, negotiation, contract, delivery. Hit 100% of plan at ~$200,000 average deal size.</li>
+            <li>Ran full-cycle deals — account strategy, negotiation, contract, delivery. Hit 100% of plan at ~$200,000 average deal size.</li>
             <li>Owned pipeline analysis and forecasting; kept CRM data quality high across Bitrix24 and 1C for management reporting.</li>
           </ul>
         </div>
       </article>
 
       <div class="timeline-pivot" aria-hidden="true">
-        <span>engineering → sales</span>
+        <span data-i18n="pivot">engineering → sales</span>
       </div>
 
       <article class="timeline-item is-eng">
         <div class="timeline-marker"><span class="timeline-dot"></span></div>
         <div class="timeline-content">
           <div class="timeline-meta">
-            <span class="timeline-date">Dec 2023 - Feb 2025</span>
-            <span class="timeline-track">engineering</span>
+            <span class="timeline-date">Dec 2023 — Feb 2025</span>
+            <span class="timeline-track" data-i18n="track.eng">engineering</span>
           </div>
-          <h3>Senior Data Engineer, Client Solutions</h3>
-          <p class="timeline-org">WaveAccess · Remote / Las Vegas, NV</p>
-          <ul>
+          <h3 data-i18n="job2.title">Senior Data Engineer, Client Solutions</h3>
+          <p class="timeline-org" data-i18n="job2.org">WaveAccess · Remote / Las Vegas, NV</p>
+          <ul data-i18n="job2.bullets">
             <li>Built and maintained ETL infrastructure with Terraform, AWS, Ansible, and Airflow; wrote data-processing logic in Snowflake, Python, and JavaScript.</li>
             <li>Set up monitoring and cost optimization with CloudWatch, DataDog, AWS Glue, and Snowflake.</li>
-            <li>Acted as primary liaison between engineering and client stakeholders - including senior leadership - translating business needs into technical tasks.</li>
+            <li>Acted as primary liaison between engineering and client stakeholders — including senior leadership — translating business needs into technical tasks.</li>
             <li>Mentored team members on technical process and client communication.</li>
           </ul>
         </div>
@@ -149,12 +154,12 @@
         <div class="timeline-marker"><span class="timeline-dot"></span></div>
         <div class="timeline-content">
           <div class="timeline-meta">
-            <span class="timeline-date">Dec 2021 - Nov 2023</span>
-            <span class="timeline-track">engineering</span>
+            <span class="timeline-date">Dec 2021 — Nov 2023</span>
+            <span class="timeline-track" data-i18n="track.eng">engineering</span>
           </div>
-          <h3>Software Engineer</h3>
-          <p class="timeline-org">WaveAccess · Remote / Las Vegas, NV</p>
-          <ul>
+          <h3 data-i18n="job3.title">Software Engineer</h3>
+          <p class="timeline-org" data-i18n="job3.org">WaveAccess · Remote / Las Vegas, NV</p>
+          <ul data-i18n="job3.bullets">
             <li>Developed eSIM management APIs and improved VoIP routing (Asterisk) to hold call quality under high network load.</li>
             <li>Built Python and Java microservices for network monitoring and failure prediction, with RabbitMQ and MariaDB; automated CI/CD with Docker.</li>
             <li>Built a monitoring stack for containerized apps using Elasticsearch, Prometheus, and Grafana; added security checks and data protection.</li>
@@ -167,14 +172,14 @@
         <div class="timeline-marker"><span class="timeline-dot"></span></div>
         <div class="timeline-content">
           <div class="timeline-meta">
-            <span class="timeline-date">2018 - 2021</span>
-            <span class="timeline-track">sales</span>
+            <span class="timeline-date">2018 — 2021</span>
+            <span class="timeline-track" data-i18n="track.sales">sales</span>
           </div>
-          <h3>EdTech Sales Consultant</h3>
-          <p class="timeline-org">Algoritmika · Part-time, alongside university</p>
-          <ul>
+          <h3 data-i18n="job4.title">EdTech Sales Consultant</h3>
+          <p class="timeline-org" data-i18n="job4.org">Algoritmika · Part-time, alongside university</p>
+          <ul data-i18n="job4.bullets">
             <li>Sold educational programs to parents and students, personally running trial and demo lessons end to end.</li>
-            <li>Managed a client portfolio - onboarding, retention, upselling, renewals.</li>
+            <li>Managed a client portfolio — onboarding, retention, upselling, renewals.</li>
             <li>Trained and onboarded new sales team members.</li>
           </ul>
         </div>
@@ -186,20 +191,20 @@
   <section class="section bottom-grid" data-reveal>
     <div class="section-head">
       <span class="tag-label">04</span>
-      <h2>Education &amp; Languages</h2>
+      <h2 data-i18n="h.edu">Education &amp; Languages</h2>
     </div>
     <div class="section-body bottom-cols">
       <div>
-        <h3 class="mini-head">Education</h3>
-        <p class="edu-title">B.S., Computer Science and Computer Engineering</p>
-        <p class="edu-sub">Samara National Research University · 2018 - 2021</p>
+        <h3 class="mini-head" data-i18n="mini.edu">Education</h3>
+        <p class="edu-title" data-i18n="edu.title">B.S., Computer Science and Computer Engineering</p>
+        <p class="edu-sub" data-i18n="edu.sub">Samara National Research University · 2018 — 2021</p>
       </div>
       <div>
-        <h3 class="mini-head">Languages</h3>
+        <h3 class="mini-head" data-i18n="mini.lang">Languages</h3>
         <ul class="lang-list">
-          <li><span>Russian</span><span class="lang-level">Native</span></li>
-          <li><span>English</span><span class="lang-level">C1</span></li>
-          <li><span>Spanish</span><span class="lang-level">A2</span></li>
+          <li><span data-i18n="lang.ru.name">Russian</span><span class="lang-level" data-i18n="lang.ru.level">Native</span></li>
+          <li><span data-i18n="lang.en.name">English</span><span class="lang-level">C1</span></li>
+          <li><span data-i18n="lang.es.name">Spanish</span><span class="lang-level">A2</span></li>
         </ul>
       </div>
     </div>
@@ -208,13 +213,14 @@
 </main>
 
 <footer class="footer">
-  <p>Danila Diagilev - Head of Sales</p>
+  <p data-i18n="footer.title">Danila Diagilev — Head of Sales</p>
   <div class="footer-links">
     <a href="mailto:dyagilev.danila@gmail.com">dyagilev.danila@gmail.com</a>
-    <a href="https://t.me/evkdl" target="_blank" rel="noopener">Telegram</a>
+    <a href="https://t.me/evkdl" target="_blank" rel="noopener" data-i18n="footer.telegram">Telegram</a>
   </div>
 </footer>
 
+<script src="translations.js"></script>
 <script src="script.js"></script>
 </body>
 </html>

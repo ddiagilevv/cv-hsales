@@ -75,4 +75,56 @@ window.addEventListener("DOMContentLoaded", () => {
   } else {
     sections.forEach((s) => s.classList.add("is-visible"));
   }
+
+  initLanguageSwitch();
 });
+
+// ============================================
+// Language switch (EN default, RU translation)
+// ============================================
+function initLanguageSwitch() {
+  const i18nEls = document.querySelectorAll("[data-i18n]");
+  const buttons = document.querySelectorAll(".lang-btn");
+
+  // Capture the original English markup once, before anything changes.
+  const originalHTML = new Map();
+  i18nEls.forEach((el) => originalHTML.set(el, el.innerHTML));
+
+  function applyLanguage(lang) {
+    i18nEls.forEach((el) => {
+      const key = el.getAttribute("data-i18n");
+      if (lang === "ru" && translations.ru[key]) {
+        el.innerHTML = translations.ru[key];
+      } else {
+        el.innerHTML = originalHTML.get(el);
+      }
+    });
+
+    document.documentElement.lang = lang;
+
+    buttons.forEach((btn) => {
+      const isActive = btn.getAttribute("data-lang") === lang;
+      btn.classList.toggle("is-active", isActive);
+      btn.setAttribute("aria-pressed", String(isActive));
+    });
+
+    try {
+      localStorage.setItem("resume-lang", lang);
+    } catch (e) {
+      /* localStorage unavailable — ignore */
+    }
+  }
+
+  buttons.forEach((btn) => {
+    btn.addEventListener("click", () => applyLanguage(btn.getAttribute("data-lang")));
+  });
+
+  let savedLang = "en";
+  try {
+    savedLang = localStorage.getItem("resume-lang") || "en";
+  } catch (e) {
+    /* localStorage unavailable — default to English */
+  }
+
+  if (savedLang === "ru") applyLanguage("ru");
+}

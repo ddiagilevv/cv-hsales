@@ -70,7 +70,7 @@ const translations = {
 
     "h.edu": "Образование и языки",
     "mini.edu": "Образование",
-    "edu.title": "Бакалавр, Computer Science and Computer Engineering",
+    "edu.title": "Факультет Информатики, Информатика и вычислительная техника",
     "edu.sub": "Самарский национальный исследовательский университет · 2018 - 2021",
     "mini.lang": "Языки",
     "lang.ru.name": "Русский",

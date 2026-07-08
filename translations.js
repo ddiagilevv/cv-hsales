@@ -2,7 +2,7 @@
 // English is the source of truth and lives directly in index.html.
 const translations = {
   ru: {
-    "eyebrow": "Лидер продаж B2B - с инженерным бэкграундом",
+    "eyebrow": "",
     "role": "Head of Sales / Sales Operations Manager",
     "loc.city": "Тбилиси, Грузия",
     "loc.en": "EN C1",
@@ -82,3 +82,6 @@ const translations = {
     "footer.telegram": "Телеграм"
   }
 };
+
+
+

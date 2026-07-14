@@ -55,11 +55,10 @@ async function runTypewriter() {
 }
 
 window.addEventListener("DOMContentLoaded", () => {
-  runTypewriter();
-
   // Scroll reveal for sections
   const sections = document.querySelectorAll(".section");
-  if ("IntersectionObserver" in window && !reduceMotion) {
+
+  if ("IntersectionObserver" in window) {
     const io = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -71,6 +70,7 @@ window.addEventListener("DOMContentLoaded", () => {
       },
       { threshold: 0.12 }
     );
+
     sections.forEach((s) => io.observe(s));
   } else {
     sections.forEach((s) => s.classList.add("is-visible"));

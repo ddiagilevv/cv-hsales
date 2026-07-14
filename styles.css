@@ -112,10 +112,7 @@ a { color: inherit; }
 .hero-grid {
   max-width: var(--max-width);
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1.15fr 1fr;
-  gap: clamp(32px, 6vw, 64px);
-  align-items: center;
+  display: block;
 }
 
 .eyebrow {

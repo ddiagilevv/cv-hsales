@@ -82,6 +82,3 @@ const translations = {
     "footer.telegram": "Телеграм"
   }
 };
-
-
-
